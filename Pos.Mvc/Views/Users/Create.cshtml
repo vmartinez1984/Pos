@@ -1,0 +1,20 @@
+﻿@using Pos.Core.Dtos
+@model UserDtoIn
+@{
+    ViewData["Title"] = "Usuario";
+}
+
+<div class="col-sm-12 col-xl-6">
+    <div class="bg-light rounded h-100 p-4">
+        <h6 class="mb-4">Basic Form</h6>
+        <form>
+            <div class="mb-3">
+                <label asp-for="Name" class="form-label"></label>
+                <input asp-for="Name" class="form-control" aria-describedby="emailHelp">
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+    </div>
+</div>

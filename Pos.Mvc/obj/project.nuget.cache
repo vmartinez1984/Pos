@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "CeoD8Ygmh59DweRJ8V+Hwe4+4djq9dt9DZaIl0wh0B5SngbpJkyme4iJD/7vxisQw0uKcjpe1O3IK/wKQ+7DfQ==",
+  "success": true,
+  "projectFilePath": "/media/vmartinez/X-Files1/Documents/Pos/Pos.Mvc/Pos.Mvc.csproj",
+  "expectedPackageFiles": [
+    "/home/vmartinez/.nuget/packages/automapper/11.0.1/automapper.11.0.1.nupkg.sha512",
+    "/home/vmartinez/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

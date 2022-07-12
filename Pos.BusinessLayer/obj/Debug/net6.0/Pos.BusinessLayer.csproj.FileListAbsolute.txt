@@ -1,0 +1,15 @@
+/media/vmartinez/X-Files1/Documents/Pos/Pos.BusinessLayer/bin/Debug/net6.0/Pos.BusinessLayer.deps.json
+/media/vmartinez/X-Files1/Documents/Pos/Pos.BusinessLayer/bin/Debug/net6.0/Pos.BusinessLayer.dll
+/media/vmartinez/X-Files1/Documents/Pos/Pos.BusinessLayer/bin/Debug/net6.0/Pos.BusinessLayer.pdb
+/media/vmartinez/X-Files1/Documents/Pos/Pos.BusinessLayer/obj/Debug/net6.0/Pos.BusinessLayer.csproj.AssemblyReference.cache
+/media/vmartinez/X-Files1/Documents/Pos/Pos.BusinessLayer/obj/Debug/net6.0/Pos.BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+/media/vmartinez/X-Files1/Documents/Pos/Pos.BusinessLayer/obj/Debug/net6.0/Pos.BusinessLayer.AssemblyInfoInputs.cache
+/media/vmartinez/X-Files1/Documents/Pos/Pos.BusinessLayer/obj/Debug/net6.0/Pos.BusinessLayer.AssemblyInfo.cs
+/media/vmartinez/X-Files1/Documents/Pos/Pos.BusinessLayer/obj/Debug/net6.0/Pos.BusinessLayer.csproj.CoreCompileInputs.cache
+/media/vmartinez/X-Files1/Documents/Pos/Pos.BusinessLayer/obj/Debug/net6.0/Pos.BusinessLayer.dll
+/media/vmartinez/X-Files1/Documents/Pos/Pos.BusinessLayer/obj/Debug/net6.0/refint/Pos.BusinessLayer.dll
+/media/vmartinez/X-Files1/Documents/Pos/Pos.BusinessLayer/obj/Debug/net6.0/Pos.BusinessLayer.pdb
+/media/vmartinez/X-Files1/Documents/Pos/Pos.BusinessLayer/obj/Debug/net6.0/ref/Pos.BusinessLayer.dll
+/media/vmartinez/X-Files1/Documents/Pos/Pos.BusinessLayer/bin/Debug/net6.0/Pos.Core.dll
+/media/vmartinez/X-Files1/Documents/Pos/Pos.BusinessLayer/bin/Debug/net6.0/Pos.Core.pdb
+/media/vmartinez/X-Files1/Documents/Pos/Pos.BusinessLayer/obj/Debug/net6.0/Pos.BusinessLayer.csproj.CopyComplete

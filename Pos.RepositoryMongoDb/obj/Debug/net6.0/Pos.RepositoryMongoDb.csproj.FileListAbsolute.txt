@@ -1,0 +1,15 @@
+/media/vmartinez/X-Files1/Documents/Pos/Pos.RepositoryMongoDb/obj/Debug/net6.0/Pos.RepositoryMongoDb.csproj.AssemblyReference.cache
+/media/vmartinez/X-Files1/Documents/Pos/Pos.RepositoryMongoDb/obj/Debug/net6.0/Pos.RepositoryMongoDb.GeneratedMSBuildEditorConfig.editorconfig
+/media/vmartinez/X-Files1/Documents/Pos/Pos.RepositoryMongoDb/obj/Debug/net6.0/Pos.RepositoryMongoDb.AssemblyInfoInputs.cache
+/media/vmartinez/X-Files1/Documents/Pos/Pos.RepositoryMongoDb/obj/Debug/net6.0/Pos.RepositoryMongoDb.AssemblyInfo.cs
+/media/vmartinez/X-Files1/Documents/Pos/Pos.RepositoryMongoDb/obj/Debug/net6.0/Pos.RepositoryMongoDb.csproj.CoreCompileInputs.cache
+/media/vmartinez/X-Files1/Documents/Pos/Pos.RepositoryMongoDb/bin/Debug/net6.0/Pos.RepositoryMongoDb.deps.json
+/media/vmartinez/X-Files1/Documents/Pos/Pos.RepositoryMongoDb/bin/Debug/net6.0/Pos.RepositoryMongoDb.dll
+/media/vmartinez/X-Files1/Documents/Pos/Pos.RepositoryMongoDb/bin/Debug/net6.0/Pos.RepositoryMongoDb.pdb
+/media/vmartinez/X-Files1/Documents/Pos/Pos.RepositoryMongoDb/bin/Debug/net6.0/Pos.Core.dll
+/media/vmartinez/X-Files1/Documents/Pos/Pos.RepositoryMongoDb/bin/Debug/net6.0/Pos.Core.pdb
+/media/vmartinez/X-Files1/Documents/Pos/Pos.RepositoryMongoDb/obj/Debug/net6.0/Pos.RepositoryMongoDb.csproj.CopyComplete
+/media/vmartinez/X-Files1/Documents/Pos/Pos.RepositoryMongoDb/obj/Debug/net6.0/Pos.RepositoryMongoDb.dll
+/media/vmartinez/X-Files1/Documents/Pos/Pos.RepositoryMongoDb/obj/Debug/net6.0/refint/Pos.RepositoryMongoDb.dll
+/media/vmartinez/X-Files1/Documents/Pos/Pos.RepositoryMongoDb/obj/Debug/net6.0/Pos.RepositoryMongoDb.pdb
+/media/vmartinez/X-Files1/Documents/Pos/Pos.RepositoryMongoDb/obj/Debug/net6.0/ref/Pos.RepositoryMongoDb.dll

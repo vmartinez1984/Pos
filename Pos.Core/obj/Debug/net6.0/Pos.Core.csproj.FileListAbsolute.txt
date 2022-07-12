@@ -1,0 +1,12 @@
+/media/vmartinez/X-Files1/Documents/Pos/Pos.Core/bin/Debug/net6.0/Pos.Core.deps.json
+/media/vmartinez/X-Files1/Documents/Pos/Pos.Core/bin/Debug/net6.0/Pos.Core.dll
+/media/vmartinez/X-Files1/Documents/Pos/Pos.Core/bin/Debug/net6.0/Pos.Core.pdb
+/media/vmartinez/X-Files1/Documents/Pos/Pos.Core/obj/Debug/net6.0/Pos.Core.csproj.AssemblyReference.cache
+/media/vmartinez/X-Files1/Documents/Pos/Pos.Core/obj/Debug/net6.0/Pos.Core.GeneratedMSBuildEditorConfig.editorconfig
+/media/vmartinez/X-Files1/Documents/Pos/Pos.Core/obj/Debug/net6.0/Pos.Core.AssemblyInfoInputs.cache
+/media/vmartinez/X-Files1/Documents/Pos/Pos.Core/obj/Debug/net6.0/Pos.Core.AssemblyInfo.cs
+/media/vmartinez/X-Files1/Documents/Pos/Pos.Core/obj/Debug/net6.0/Pos.Core.csproj.CoreCompileInputs.cache
+/media/vmartinez/X-Files1/Documents/Pos/Pos.Core/obj/Debug/net6.0/Pos.Core.dll
+/media/vmartinez/X-Files1/Documents/Pos/Pos.Core/obj/Debug/net6.0/refint/Pos.Core.dll
+/media/vmartinez/X-Files1/Documents/Pos/Pos.Core/obj/Debug/net6.0/Pos.Core.pdb
+/media/vmartinez/X-Files1/Documents/Pos/Pos.Core/obj/Debug/net6.0/ref/Pos.Core.dll
