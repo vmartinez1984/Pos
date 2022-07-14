@@ -11,5 +11,9 @@ namespace Pos.RepositoryMongoDb.DataBaseSettings
         public string RolesCollectionName { get; set; } = null!;
         
         public string ProductsCollectionName { get; set; } = null!;
+
+        public string StoreCollectionName { get; set; } = null!;
+        
+        public string SalesCollectionName { get; set; } = null!;
     }
 }

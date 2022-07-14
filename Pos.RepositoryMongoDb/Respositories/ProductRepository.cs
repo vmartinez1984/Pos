@@ -48,7 +48,7 @@ namespace Pos.RepositoryMongoDb.Respositories
         {
             long count;
 
-            count = await _collection.CountAsync(x => x.Id == codeBar);
+            count = await _collection.CountDocumentsAsync(x => x.CodeBar == codeBar && x.IsActive == true);
 
             return count == 0 ? false : true;
         }
