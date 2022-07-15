@@ -50,11 +50,16 @@ namespace Pos.BusinessLayer
                 if (entity.Password == userLogin.Password)
                 {
                     entity.Password = string.Empty;
-                    user = _mapper.Map<UserDto>(entity);         
+                    user = _mapper.Map<UserDto>(entity);
                 }
             }
 
             return user;
+        }
+
+        public async Task<bool> ExistsEmailAsync(string email)
+        {
+            return await _repository.User.ExistsEmailAsync(email);
         }
     }
 }

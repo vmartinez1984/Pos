@@ -29,9 +29,13 @@ namespace Pos.RepositoryMongoDb.Respositories
             return entity.Id;
         }
 
-        public Task<StoreEntity> GetAsync(string barcode)
+        public async Task<StoreEntity> GetAsync(string barcode)
         {
-            throw new NotImplementedException();
+            StoreEntity entity;
+
+            entity = await _collection.Find(x => x.Barcode == barcode && x.IsActive == true).FirstAsync();
+
+            return entity;
         }
 
         public Task<List<StoreEntity>> GetAsync()
@@ -39,9 +43,14 @@ namespace Pos.RepositoryMongoDb.Respositories
             throw new NotImplementedException();
         }
 
-        public Task SubstractPieces(string barcode, int piezas)
+        public async Task SubstractPieces(string barcode, int pieces)
         {
-            throw new NotImplementedException();
+            StoreEntity entity;
+
+            entity = await GetAsync(barcode);
+            entity.Pieces = entity.Pieces - pieces;
+
+            await _collection.ReplaceOneAsync(x => x.Id == entity.Id, entity);
         }
     }
 }

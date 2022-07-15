@@ -9,14 +9,14 @@ namespace Pos.Api.Controllers;
 [ApiController]
 [Route("[controller]")]
 [Authorize]
-public class ProductsController : ControllerBase
+public class StoreController : ControllerBase
 {
 
 
     private readonly ILogger<ProductsController> _logger;
     private readonly IUnitOfWorkBl _unitOfWorkBl;
 
-    public ProductsController(
+    public StoreController(
         ILogger<ProductsController> logger,
         IUnitOfWorkBl unitOfWorkBl
     )
@@ -25,35 +25,22 @@ public class ProductsController : ControllerBase
         _unitOfWorkBl = unitOfWorkBl;
     }
 
-    [HttpGet]
-    public async Task<IActionResult> Get()
-    {
-        List<ProductDto> list;
-
-        list = await _unitOfWorkBl.Product.GetAsync();
-
-        return Ok(list);
-    }
-
     [HttpPost]
-    public async Task<IActionResult> Post(ProductDtoIn item)
+    public async Task<IActionResult> Post(StoreDtoIn item)
     {
         string id;
 
         item.UserId = SessionHelper.GetNameIdentifier(User);
-        id = await _unitOfWorkBl.Product.AddAsync(item);
+        id = await _unitOfWorkBl.Store.AddAsync(item);
 
-        return Created($"/Products/{item.Barcode}", new { Id = id });
+        return Created($"/Store/{id}", new { Id = id });
     }
 
-    [HttpGet("{codeBar}")]
-    
-    public async Task<IActionResult> Get(string codeBar)
+    [HttpGet("{barcode}")]
+    public async Task<IActionResult> Get(string barcode)
     {
-        ProductDto item;
+        var response = await _unitOfWorkBl.Store.GetAsync(barcode);
 
-        item = await _unitOfWorkBl.Product.GetAsync(codeBar);
-
-        return Ok(item);
+        return Ok(response);
     }
-}
+}//end class

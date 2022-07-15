@@ -15,6 +15,15 @@ namespace Pos.Core.Mappers
 
             CreateMap<ProductDtoIn, ProductEntity>();
             CreateMap<ProductEntity, ProductDto>();
+
+            CreateMap<StoreDtoIn, StoreEntity>();
+
+            CreateMap<ProductSaleDtoIn, ProductSaleEntity>();
+
+            CreateMap<ProductSaleEntity, ProductSaleDto>();
+            CreateMap<SaleEntity, SaleDto>();
+
+            CreateMap<StoreEntity, StoreDto>();
         }
     }
 }

@@ -27,6 +27,11 @@ namespace Pos.BusinessLayer
             return entity.Id;
         }
 
+        public Task<bool> ExistsBarcodeAsync(string barcode)
+        {
+            return _repository.Product.ExistsCodeBarAsync(barcode);
+        }
+
         public async Task<List<ProductDto>> GetAsync()
         {
             List<ProductDto> list;

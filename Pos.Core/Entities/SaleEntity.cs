@@ -1,12 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Pos.Core.Entities
 {
     public class SaleEntity: BaseEntity
-    {
-        public decimal Total { get; set; }
+    {        
+        public string UserId { get; set; }
+        public decimal Total { get; set; }        
+        public string State { get; set; }
+
+        public List<ProductSaleEntity> ListProducts { get; set; }
     }
 }

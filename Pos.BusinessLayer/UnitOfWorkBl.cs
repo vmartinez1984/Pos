@@ -7,15 +7,23 @@ public class UnitOfWorkBl : IUnitOfWorkBl
         IUserBl user
         , IRoleBl role
         , IProductBl productBl
+        , ISaleBl saleBl
+        , IStoreBl storeBl
     )
     {
         this.Role = role;
         this.User = user;
         this.Product = productBl;
+        this.Store = storeBl;
+        this.Sale = saleBl;
     }
     public IUserBl User { get; }
 
     public IRoleBl Role { get; }
 
-    public IProductBl Product {get;}
+    public IProductBl Product { get; }
+
+    public ISaleBl Sale { get; }
+
+    public IStoreBl Store { get;}
 }

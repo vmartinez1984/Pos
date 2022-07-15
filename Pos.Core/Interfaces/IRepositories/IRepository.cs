@@ -4,11 +4,34 @@ namespace Pos.Core.Interfaces.IRepositories
 {
     public interface IRepository
     {
-        //public IProductRepository Product { get; }
         public IUserRepository User { get; }
 
         public IRoleRepository Role { get; }
+
         public IProductRepository Product { get; }
+
+        public ISaleRepository Sale { get; }
+
+        public IStoreRepository Store { get; }
+        
+    }
+
+    public interface ISaleRepository
+    {
+        Task<string> AddAsync(string userId);
+        Task AddProductAsync(ProductSaleEntity product, string saleId);
+        Task<SaleEntity> GetAsync(string saleId);
+    }
+
+    public interface IStoreRepository
+    {
+        Task<string> AddAsync(StoreEntity entity);
+
+        Task<StoreEntity> GetAsync(string barcode);
+
+        Task SubstractPieces(string barcode, int piezas);
+        
+        Task<List<StoreEntity>> GetAsync();
     }
 
     public interface IRoleRepository
@@ -23,6 +46,7 @@ namespace Pos.Core.Interfaces.IRepositories
         Task<string> AddAsync(UserEntity entity);
         Task<List<UserEntity>> GetAsync();
         Task<UserEntity> GetAsync(string email);
+        Task<bool> ExistsEmailAsync(string email);
     }
 
     public interface IProductRepository

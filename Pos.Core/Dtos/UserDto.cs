@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using Pos.Core.Validators;
 
 namespace Pos.Core.Dtos
 {
@@ -15,6 +16,7 @@ namespace Pos.Core.Dtos
 
         public string LastName { get; set; }
 
+        [ExistsEmail]
         public string Email { get; set; }
 
         public string Password { get; set; }

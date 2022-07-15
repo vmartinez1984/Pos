@@ -27,8 +27,12 @@ builder.Services.Configure<PosDatabaseSettings>(builder.Configuration.GetSection
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IRoleRepository, RoleRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<ISaleRepository, SaleRepository>();
+builder.Services.AddScoped<IStoreRepository, StoreRepository>();
 builder.Services.AddScoped<IRepository, RepositoryMongoDb>();
 builder.Services.AddScoped<IUserBl, UserBl>();
+builder.Services.AddScoped<IStoreBl, StoreBl>();
+builder.Services.AddScoped<ISaleBl, SaleBl>();
 builder.Services.AddScoped<IRoleBl, RoleBl>();
 builder.Services.AddScoped<IProductBl, ProductBl>();
 builder.Services.AddScoped<IUnitOfWorkBl, UnitOfWorkBl>();

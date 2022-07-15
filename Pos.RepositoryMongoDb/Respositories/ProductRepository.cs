@@ -39,7 +39,7 @@ namespace Pos.RepositoryMongoDb.Respositories
         {
             ProductEntity entity;
 
-            entity = await _collection.Find(x => x.CodeBar == codeBar).FirstOrDefaultAsync();
+            entity = await _collection.Find(x => x.Barcode == codeBar).FirstOrDefaultAsync();
 
             return entity;
         }
@@ -48,7 +48,7 @@ namespace Pos.RepositoryMongoDb.Respositories
         {
             long count;
 
-            count = await _collection.CountDocumentsAsync(x => x.CodeBar == codeBar && x.IsActive == true);
+            count = await _collection.CountDocumentsAsync(x => x.Barcode == codeBar && x.IsActive == true);
 
             return count == 0 ? false : true;
         }
