@@ -23,6 +23,8 @@ namespace Pos.Core.Interfaces.IBusinesLayer
         Task<string> StartAsync(SaleDtoIn item);
         Task<SaleDto> AddProduct(ProductSaleDtoIn product);
         Task<SaleDto> GetAsync(string id);
+        Task<SaleDto> CompletedAsync(string id);
+        Task<SaleDto> CancelAsync(string id);
     }
 
     public interface IProductBl

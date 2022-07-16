@@ -19,8 +19,12 @@ namespace Pos.Core.Interfaces.IRepositories
     public interface ISaleRepository
     {
         Task<string> AddAsync(string userId);
+        
         Task AddProductAsync(ProductSaleEntity product, string saleId);
+
         Task<SaleEntity> GetAsync(string saleId);
+
+        Task UpdateAsync(SaleEntity saleEntity);
     }
 
     public interface IStoreRepository
@@ -32,6 +36,7 @@ namespace Pos.Core.Interfaces.IRepositories
         Task SubstractPieces(string barcode, int piezas);
         
         Task<List<StoreEntity>> GetAsync();
+        Task UpdateAsync(StoreEntity storeEntity);
     }
 
     public interface IRoleRepository

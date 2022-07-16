@@ -47,17 +47,23 @@ namespace Pos.RepositoryMongoDb.Respositories
             entity = await _collection.Find(x => x.Id == saleId).FirstOrDefaultAsync();
             entity.ListProducts.Add(product);
             entity.Total = entity.ListProducts.Sum(x => x.Price);
-            
+
             await _collection.ReplaceOneAsync(x => x.Id == saleId, entity);
         }
 
         public async Task<SaleEntity> GetAsync(string saleId)
         {
-             SaleEntity entity;
+            SaleEntity entity;
 
             entity = await _collection.Find(x => x.Id == saleId).FirstOrDefaultAsync();
 
             return entity;
         }
-    }
+
+        public async Task UpdateAsync(SaleEntity entity)
+        {
+            await _collection.ReplaceOneAsync(x => x.Id == entity.Id, entity);
+        }
+        
+    }//end class
 }

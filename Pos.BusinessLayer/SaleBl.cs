@@ -21,7 +21,7 @@ namespace Pos.BusinessLayer
         {
             //Verificamos que este en existencia en almacen
             StoreEntity storeEntity;
-            ProductSaleEntity productSaleEntity;            
+            ProductSaleEntity productSaleEntity;
             SaleDto saleDto;
 
             storeEntity = await _repository.Store.GetAsync(product.Barcode);
@@ -71,6 +71,47 @@ namespace Pos.BusinessLayer
             saleDto = _mapper.Map<SaleDto>(saleEntity);
 
             return saleDto;
+        }
+
+        public async Task<SaleDto> CompletedAsync(string id)
+        {
+            SaleEntity entity;
+
+            entity = await _repository.Sale.GetAsync(id);
+            if (entity.State == "Inicio")
+            {
+
+                entity.State = "Completado";
+                await _repository.Sale.UpdateAsync(entity);
+
+                return await GetAsync(id);
+            }else
+                throw new Exception("No se puede completar "+ entity.State);
+        }
+
+        public async Task<SaleDto> CancelAsync(string id)
+        {
+            SaleEntity saleEntity;
+
+            saleEntity = await _repository.Sale.GetAsync(id);
+            await BackProducts(saleEntity);
+            saleEntity.State = "Cancelado";
+            saleEntity.Total = 0;
+            await _repository.Sale.UpdateAsync(saleEntity);
+
+            return await GetAsync(id);
+        }
+
+        private async Task BackProducts(SaleEntity saleDto)
+        {
+            foreach (var item in saleDto.ListProducts)
+            {
+                StoreEntity storeEntity;
+
+                storeEntity = await _repository.Store.GetAsync(item.Barcode);
+                storeEntity.Pieces++;
+                await _repository.Store.UpdateAsync(storeEntity);
+            }
         }
     }
 }

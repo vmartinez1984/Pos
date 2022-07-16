@@ -58,4 +58,24 @@ public class SalesController : ControllerBase
 
         return Ok(sale);
     }
+
+    [HttpGet("{id}/Complete")]
+    public async Task<IActionResult> CompletedSale(string id)
+    {
+        SaleDto sale;
+
+        sale = await _unitOfWorkBl.Sale.CompletedAsync(id);
+
+        return Ok(sale);
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> CancelSale(string id)
+    {
+        SaleDto sale;
+
+        sale = await _unitOfWorkBl.Sale.CancelAsync(id);
+
+        return Ok(sale);
+    }
 }
